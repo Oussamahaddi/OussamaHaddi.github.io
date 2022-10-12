@@ -1,0 +1,235 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* #FBFFF1 */
+    background-color: rgb(255, 240, 216);
+}
+
+/* header  */
+
+header {
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+}
+
+header .container {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container .nav_bar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header .container .nav_bar ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+header .container .nav_bar ul li a {
+    text-decoration: none;
+    color: black;
+} 
+
+header .container .nav_bar ul li {
+    font-weight: bold;
+}
+
+
+/* main */
+
+.home {
+    display: flex;
+    justify-content: center;
+    height: 40rem;
+    margin-top: 5rem;
+}
+
+.home .container {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 10px;
+}
+
+.home .container .all_picture {
+    position: relative;
+}
+
+.home .container .all_picture img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 5px 0 rgb(57, 56, 56);
+}
+
+.home .container .all_picture img:nth-child(1) {
+    left: calc(100% - 300px);
+    width: 400px;
+    z-index: 100;
+}
+.home .container .all_picture img:nth-child(2) {
+    width: 240px;
+    left: calc(100% - 450px);
+    top: 280px;
+}
+.home .container .all_picture img:nth-child(3) {
+    width: 150px;
+    height: 230px;
+    left: calc(100% - 200px);
+    top: 240px;
+    z-index: 110;
+}
+
+.home .container .content_text {
+    grid-column: 2;
+}
+
+.home .container .content_text h1 {
+    font-family: Gabriela;
+    font-size: 6rem;
+}
+
+.home .container h1,
+.home .container p,
+.home .container .btn {
+    margin-bottom: 50px;
+}
+
+.home .container p {
+    color: rgb(128, 128, 128);
+}
+
+.home .container .btn {
+    display: flex;
+    justify-content: center;
+}
+
+.home .container .btn button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+
+/* Portfulio page */
+
+.portfulio,
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.portfulio .container_portfulio {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    row-gap: 50px;
+}
+
+.portfulio .container_portfulio div {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    width: calc(100% - 50px);
+}
+
+.portfulio .container_portfulio div img {
+    width: 100%;
+}
+
+.portfulio .portfulio_title h2 {
+    font-size: 5rem;
+    font-family: Gabriela;
+    margin: 20px 0;
+}
+
+
+/* contact page */
+
+.contact .container {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    gap: 40px;
+    height: 50rem;
+}
+
+.contact .container .contact_title {
+    grid-area: 1/2/3/2;
+    margin-top: -150px;
+    text-align: center;
+}
+
+.contact .container .form {
+    grid-area: 1/1/3/1;
+    width: 100%;
+}
+
+.contact .container .form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.contact .container .form form input,
+.contact .container .form form textarea {
+    width: 400px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.contact .container .contact_title h2 {
+    font-size: 4rem;
+    font-family: Gabriela;
+    margin-bottom: 40px;
+}
+.contact .container .contact_title p {
+    color: rgb(128, 128, 128);
+}
+
+.contact .container .form form .btn {
+    display: flex;
+    justify-content: center;
+}
+
+.contact .container .form form .btn button {
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+
