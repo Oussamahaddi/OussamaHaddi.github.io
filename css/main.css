@@ -16,6 +16,13 @@ body {
     background-color: rgb(255, 240, 216);
 }
 
+header .container .logo,
+header .container .mode,
+.home .container .btn button,
+.contact .form form .btn button {
+    cursor: pointer;
+}
+
 /* header  */
 
 header {
@@ -132,6 +139,15 @@ header .container .nav_bar ul li {
     padding: 15px 30px;
     font-weight: bold;
     font-size: 16px;
+    box-shadow: 5px 5px 5px 0 rgb(125, 125, 125);
+}
+
+.home .container .btn button:hover {
+    background-color: white;
+    box-shadow: 0 10px 5px rgb(125, 125, 125);
+    color: black;
+    transform: translateY(5px);
+    transition: all 0.3s linear;
 }
 
 
@@ -157,12 +173,13 @@ header .container .nav_bar ul li {
 .portfulio .container_portfulio div {
     display: flex;
     justify-content: center;
-    height: fit-content;
+    /* height: fit-content; */
     width: calc(100% - 50px);
 }
 
 .portfulio .container_portfulio div img {
     width: 100%;
+    box-shadow: 0 0 5px rgb(56, 56, 56);
 }
 
 .portfulio .portfulio_title h2 {
