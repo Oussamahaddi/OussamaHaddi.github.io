@@ -23,6 +23,10 @@ header .container .mode,
     cursor: pointer;
 }
 
+img {
+    border-radius: 5px;
+}
+
 /* header  */
 
 header {
@@ -139,12 +143,12 @@ header .container .nav_bar ul li {
     padding: 15px 30px;
     font-weight: bold;
     font-size: 16px;
-    box-shadow: 5px 5px 5px 0 rgb(125, 125, 125);
+    box-shadow: 3px 3px 5px 0 rgb(125, 125, 125);
 }
 
 .home .container .btn button:hover {
     background-color: white;
-    box-shadow: 0 10px 5px rgb(125, 125, 125);
+    box-shadow: 2px 3px 5px rgb(125, 125, 125);
     color: black;
     transform: translateY(5px);
     transition: all 0.3s linear;
@@ -155,11 +159,14 @@ header .container .nav_bar ul li {
 /* Portfulio page */
 
 .portfulio,
-.contact {
+.contact{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%;
+}
+
+.portfulio {
+    height: 100rem;
 }
 
 .portfulio .container_portfulio {
@@ -188,17 +195,53 @@ header .container .nav_bar ul li {
     margin: 20px 0;
 }
 
+/* about page */
+
+.about {
+    display: flex;
+    justify-content: center;
+    /* height: 50rem; */
+}
+
+.about .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 70%;
+    gap: 20px;
+}
+
+.about .container .about_img img {
+    box-shadow: 0 0 5px 0 rgb(87, 87, 87);
+}
+
+.about .container .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    min-width: 300px;
+}
+
+.about .container .title h2 {
+    font-size: 5rem;
+    font-family: Gabriela;
+}
+.about .container .title p {
+    font-weight: 500;
+    line-height: 1.5;
+    min-width: 100px;
+}
 
 /* contact page */
 
 .contact .container {
     width: 70%;
+    height: 50rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     align-items: center;
     gap: 40px;
-    height: 50rem;
 }
 
 .contact .container .contact_title {
@@ -248,5 +291,13 @@ header .container .nav_bar ul li {
     border-radius: 10px;
     background-color: black;
     color: white;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 2px 5px #ccc;
 }
 
+.contact .container .form form .btn button:hover  {
+    background-color: #fff;
+    color: black;
+    transition: .3s;
+}
